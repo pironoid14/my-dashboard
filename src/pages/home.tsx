@@ -1,17 +1,14 @@
 import { Link } from "react-router-dom";
 
 
-
-
-
 export const Home = () => {
   return (
     <div>
-      <nav className='bg-amber-300 grid grid-cols-3'>
+      <nav className='grid grid-cols-3 border-solid underline-offset-2'>
         <div className="justify-start ">
       <h1 className="text-rose-900 font-bold  p-4 ">Journal</h1>
       </div>
-      <div className="justify-center p-4">
+      <div className=" flex justify-center p-4">
         <ul className='flex space-x-4 '>
           <li>Home</li>
           <li >about</li>
@@ -20,9 +17,11 @@ export const Home = () => {
           <li>Pricing</li>
         </ul>
         </div>
-        <div className="justify-end">
-        <Link to ="/login"> Login</Link>
-        <Link to ="/register"> Register</Link>
+        <div className=" flex justify-end p-4 ">
+          <ul className=" flex space-x-4">
+      <li> <Link to ="/register"> Register</Link></li>
+      <li> <button className="rounded-full"><Link to ="/login"> Login</Link></button></li>
+        </ul>
         </div>
 
       </nav>
@@ -33,6 +32,21 @@ export const Home = () => {
         </div>
         <div className="flex justify-center ">
          <button className="p-4  mt-4 rounded-full bg-rose-900">Get Started</button>
+        </div>
+      </section>
+
+      <section className="grid grid-cols-4  gap-2 ">
+        <div className="bg-purple-800 rounded-xl ">
+          <h1>Cycling and <br/> enjoy the city view</h1>
+        </div>
+        <div className="bg-slate-700 rounded-xl">
+          <h1>Street <br/> Photography <br/> Journal</h1>
+        </div>
+        <div className="bg-gray-500 rounded-xl">
+          <h1>My first trip with my partner</h1>
+        </div>
+        <div className="bg-stone-400 rounded-xl">
+          <h1>First day at office, very nervous</h1>
         </div>
       </section>
     </div>
