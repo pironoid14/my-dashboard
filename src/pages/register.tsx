@@ -20,7 +20,7 @@ export const Register = () => {
     const onSubmit: SubmitHandler<inputField> = data => console.log(data);
    
     return (
-        <div className="bg-amber-300 flex justify-center items-center min-h-screen ">
+        <div className="bg-white flex justify-center items-center min-h-screen ">
         <form
           action=""
           onSubmit={handleSubmit(onSubmit)}
