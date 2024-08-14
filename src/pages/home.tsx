@@ -11,7 +11,7 @@ export const Home = () => {
         <div className="justify-start ">
       <h1 className="text-rose-900 font-bold  p-4 ">Journal</h1>
       </div>
-      <div className="justify-center">
+      <div className="justify-center p-4">
         <ul className='flex space-x-4 '>
           <li>Home</li>
           <li >about</li>
