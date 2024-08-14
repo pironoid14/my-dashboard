@@ -20,7 +20,7 @@ export const Home = () => {
         <div className=" flex justify-end p-4 ">
           <ul className=" flex space-x-4">
       <li> <Link to ="/register"> Register</Link></li>
-      <li> <button className="rounded-full"><Link to ="/login"> Login</Link></button></li>
+      <li> <button className="rounded-full hover:divide-rose-800"><Link to ="/login"> Login</Link></button></li>
         </ul>
         </div>
 
