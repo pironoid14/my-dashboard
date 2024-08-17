@@ -25,7 +25,7 @@ export const Register = () => {
         <form
           action=""
           onSubmit={handleSubmit(onSubmit)}
-          className="bg-white p-6 rounded-md shadow-md w-full max-w-sm"
+          className="bg-white p-6 rounded-md shadow-md w-full max-w-sm border-2 border-black "
         >
           <div className="mb-4">
             <label htmlFor="name" className="block text-gray-700 mb-2">

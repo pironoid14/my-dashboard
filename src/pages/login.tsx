@@ -39,8 +39,8 @@ const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
   
 }
   return (
-    <div className="bg-white h-screen flex justify-center items-center border-2 border-black rounded-lg">
-    <form  className="w-full max-w-xs p-6 bg-white rounded-md shadow-lg">
+    <div className="bg-white h-screen flex justify-center items-center ">
+    <form  className="w-full max-w-xs p-6 bg-white rounded-md shadow-lg border-2 border-black ">
       <h1 className="text-2xl font-bold mb-6 text-center">Login</h1>
   
       <div className="mb-4">
