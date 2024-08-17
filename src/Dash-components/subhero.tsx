@@ -2,7 +2,7 @@
 
 export const Subhero = () => {
   return (
-    <div className="grid grid-cols-4 grid-rows-1 gap-4 p-4">
+    <div className="grid grid-cols-4 grid-rows-1 gap-4 p-4 py-4">
        <div className="bg-purple-800 rounded-xl ">
           <h1>Cycling and <br/> enjoy the city view</h1>
         </div>

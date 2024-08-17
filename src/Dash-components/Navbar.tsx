@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
  export const Navbar = () => {
   return (
-    <div>
+    <div className="bg-white p-4">
       <nav className='grid grid-cols-3 border-solid underline-offset-2'>
         <div className="justify-start ">
       <h1 className="text-rose-900 font-bold  p-4 ">Journal</h1>

@@ -4,6 +4,7 @@ import { z } from "zod";
 import { Link } from "react-router-dom";
 
 
+
 const schema = z.object({ 
     name: z.string(),
     email: z.string().email(),
@@ -77,7 +78,7 @@ export const Register = () => {
           >
             Register
           </button>
-          <Link to ="/login"></Link>
+          <Link to ="/login" className="text-xl text-blue-600 mt-4">Login</Link>
         </form>
       </div>
       
