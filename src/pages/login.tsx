@@ -63,6 +63,7 @@ const handleLogin = (e: React.FormEvent) => {
       onSubmit={handleLogin}>
         Login
       </button></Link>
+      <Link to="/ForgotPassword"><button type='submit' className="w-full bg-rose-500 text-white px-4 py-2 rounded-md hover:bg-teal-600">Forgot Password </button></Link>
     </form>
   </div>
   
