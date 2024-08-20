@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 
 const schema = z.object({ 
-    name: z.string(),
+    name: z.string().min(3),
     email: z.string().email(),
     password: z.string().min(8)
 })
@@ -78,7 +78,7 @@ export const Register = () => {
           >
             Register
           </button>
-          <Link to ="/login" className="text-xl text-blue-600 mt-4">Login</Link>
+          <Link to ="/login" className="text-xl text-blue-600 mt-5 flex justify-center hover:border-2 hover:bg-emerald-200">Login</Link>
         </form>
       </div>
       

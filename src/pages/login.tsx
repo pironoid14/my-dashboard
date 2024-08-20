@@ -9,24 +9,15 @@ export const Login = () => {
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   
 const validate = () => {
-  const errors: { [key: string]: string } = {};
-  if (!email) {
-    errors.email = "Email is required";
-  }
-  else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(email)) {
-    errors.email = "Invalid email address";
-  }
-  if (!password) {
-    errors.password = "Password is required";
-  }
-  else if (password.length < 8) {
-    errors.password = "Password must be at least 8 characters";
-  }
-  return errors;
-
+  const perrors: { [key: string]: string } = {};
+  if (!email) perrors.email = "Email is required";
+  else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(email)) perrors.email = "Invalid email address";
+  if (!password) perrors.password = "Password is required";
+  else if (password.length < 8) perrors.password = "Password must be at least 8 characters";
+  return perrors;
 }
 
-const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
+const handleLogin = (e: React.FormEvent) => {
   e.preventDefault();
   const ring = validate();
   
@@ -68,8 +59,8 @@ const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
       </div>
   
       
-      <Link to ="/"><button type="submit" className="w-full bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600" 
-      onSubmit={handleSubmit}>
+      <Link to ="/" ><button type="submit" className="w-full bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-yellow-600" 
+      onSubmit={handleLogin}>
         Login
       </button></Link>
     </form>
